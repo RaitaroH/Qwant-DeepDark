@@ -9,7 +9,7 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg)](https://raw.githubusercontent.com/RaitaroH/Qwant-DeepDark/master/Qwant.user.css)
 
-Theme as a userstyle [here](https://userstyles.org/users/377182).
+Theme as a userstyle [here](https://openusercss.org/theme/5a85980170bc4a0b00903af9).
 
 ### **You can also install all my themes at once from [here](https://github.com/RaitaroH/Import-All-Deepdark).**
 
