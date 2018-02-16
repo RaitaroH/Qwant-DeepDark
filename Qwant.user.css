@@ -2,7 +2,7 @@
 @name Qwant DeepDark
 @namespace github.com/RaitaroH/Qwant-DeepDark
 @homepageURL https://github.com/RaitaroH/Qwant-DeepDark
-@version 1.0.0
+@version 1.0.1
 @updateURL https://rawgit.com/RaitaroH/Qwant-DeepDark/master/QwantDeepDark.user.css
 @description Light will blind you in your search for answers, dark will make them shine. May the dark be kinder on thine eyes. (Qwant dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.0*/
+/*1.0.1*/
 
 	/*Main color variables*/
 	:root
@@ -398,11 +398,11 @@
 
 	.header__add-qwant
 	{
-		background: var(--main-color) !important;
+		background: var(--hover-background) !important;
 	}
 	.header__add-qwant:hover
 	{
-		filter: brightness(110%);
+		background: var(--main-color) !important;
 	}
 
 	.header__text__learn-more__icon
@@ -449,6 +449,10 @@
 	{
 		background-color: var(--main-text) !important;
 	}
+	.toggle-switch input + label::before
+	{
+		background-color: var(--hover-background) !important;
+	}
 	.select-placeholder:hover
 	{
 		color: var(--main-color) !important;
@@ -460,15 +464,20 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-	.sidebar__item__label
+	.sidebar__item__label, .icon-qwant::before
 	{
 		color: var(--main-text) !important;
 	}
 
 
-	.wrapper-dropdown .dropdown
+	.wrapper-dropdown .dropdown, .wrapper-dropdown .dropdown .dropdown__item
 	{
 		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	.wrapper-dropdown .dropdown .dropdown__item
+	{
+		color: var(--main-text) !important;
 	}
 	.wrapper-dropdown .dropdown .dropdown__item:hover, .result_filter__item--dropdown .wrapper-dropdown .select-placeholder:hover, .wrapper-dropdown.active .select-placeholder
 	{
@@ -514,5 +523,92 @@
 	.results-column--images .result:hover .result__info, .results-column--images .result.result--zoomed .result__info
 	{
 		background: var(--hover-background) !important;
+	}
+
+
+	/*login page*/
+	.input__text:active, .input__text:focus, .input__textarea:active, .input__textarea:focus
+	{
+		border-color: var(--main-color) !important;
+	}
+    .password-strength-indicator__jauge--weak
+    {
+    	background: var(--dimer-text) !important; 
+	}
+	.password-strength-indicator__jauge--medium
+	{
+		background: #FFB900 !important;
+	}
+	.password-strength-indicator__jauge--strong {
+		background: #0FBD2B;
+	}
+	.alert__item
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.alert__item__close
+	{
+		color: var(--main-text) !important
+	}
+	.alert__item__close:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.header__user-menu .wrapper-dropdown .select-placeholder
+	{
+		color: var(--main-text) !important;
+	}
+}
+
+@-moz-document domain("about.qwant.com") {
+
+	.site-header, .header_inner
+	{
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.qwant-logo
+	{
+		filter: grayscale(100%) brightness(500%);
+	}
+
+	.main-navigation .menu-item::after
+	{
+		background: var(--main-color) !important;
+	}
+
+	.wpml-ls-legacy-dropdown a.wpml-ls-item-toggle::after, .wpml-ls ul
+	{
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.wpml-ls ul:hover, .wpml-ls ul:hover *
+	{
+		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	.wpml-ls-legacy-dropdown .wpml-ls-item span:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+	.home_button_see_all a
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+	.separator1, .separator2
+	{
+		filter: invert(90%);
+	}
+	hr
+	{
+		border-color: var(--hover-background) !important;
+	}
+	footer
+	{
+		background-color: var(--second-background) !important;
 	}
 }
