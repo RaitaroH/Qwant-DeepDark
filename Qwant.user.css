@@ -370,7 +370,6 @@
 		color: var(--dimer-text) !important;
 	}
 
-
 	/*Main page*/
 	.search_bar .search_bar__form__input
 	{
@@ -559,7 +558,29 @@
 	{
 		color: var(--main-text) !important;
 	}
-}
+
+	/*Mobile main page*/
+	.header, #main, .result-list__top,
+	.results-page--all-mobile,
+	.results-page--web,
+	.results-page--news,
+	.results-page--social,
+	.results-page--images,
+	.results-page--videos,
+	.results-page--shopping,
+	.results-page--music
+	{
+		background: var(--main-background) !important;
+		color: var(--dimer-text) !important;
+	}
+	.result-list__carousel-item--current .result-list__carousel__title
+	{
+		outline-color: var(--main-color) !important;
+	}
+	.home__logo__container .header__mobile-logo--large
+	{
+		filter: brightness(400%) grayscale(100%);
+	}
 
 @-moz-document domain("about.qwant.com") {
 
