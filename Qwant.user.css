@@ -581,6 +581,25 @@
 	{
 		filter: brightness(400%) grayscale(100%);
 	}
+	.header__mobile-icon
+	{
+		filter: brightness(200%) grayscale(100%);
+	}
+
+	/*Mobile sidebar*/
+	.sidebar__mobile, .sidebar__mobile__links
+	{
+		background: var(--main-background);
+		border-color: var(--hover-background);
+	}
+	.sidebar__mobile__settings, .sidebar__mobile__user
+	{
+		border-color: var(--hover-background);
+	}
+	.sidebar__mobile__settings h3, .sidebar__mobile__links h3
+	{
+		color: var(--main-text);
+	}
 
 @-moz-document domain("about.qwant.com") {
 
