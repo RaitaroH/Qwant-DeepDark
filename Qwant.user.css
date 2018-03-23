@@ -573,9 +573,10 @@
 		background: var(--main-background) !important;
 		color: var(--dimer-text) !important;
 	}
-	.result-list__carousel-item--current .result-list__carousel__title
+	.result-list__carousel-item--current .result-list__carousel__title,
+	.result-list__carousel__title
 	{
-		outline-color: var(--main-color) !important;
+		color: var(--main-text);
 	}
 	.home__logo__container .header__mobile-logo--large
 	{
