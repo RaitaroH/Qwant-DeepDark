@@ -600,6 +600,7 @@
 	{
 		color: var(--main-text);
 	}
+}
 
 @-moz-document domain("about.qwant.com") {
 
