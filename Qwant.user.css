@@ -370,7 +370,6 @@
 		color: var(--dimer-text) !important;
 	}
 
-
 	/*Main page*/
 	.search_bar .search_bar__form__input
 	{
@@ -558,6 +557,49 @@
 	.header__user-menu .wrapper-dropdown .select-placeholder
 	{
 		color: var(--main-text) !important;
+	}
+
+	/*Mobile main page*/
+	.header, #main, .result-list__top,
+	.results-page--all-mobile,
+	.results-page--web,
+	.results-page--news,
+	.results-page--social,
+	.results-page--images,
+	.results-page--videos,
+	.results-page--shopping,
+	.results-page--music
+	{
+		background: var(--main-background) !important;
+		color: var(--dimer-text) !important;
+	}
+	.result-list__carousel-item--current .result-list__carousel__title,
+	.result-list__carousel__title
+	{
+		color: var(--main-text);
+	}
+	.home__logo__container .header__mobile-logo--large
+	{
+		filter: brightness(400%) grayscale(100%);
+	}
+	.header__mobile-icon
+	{
+		filter: brightness(200%) grayscale(100%);
+	}
+
+	/*Mobile sidebar*/
+	.sidebar__mobile, .sidebar__mobile__links
+	{
+		background: var(--main-background);
+		border-color: var(--hover-background);
+	}
+	.sidebar__mobile__settings, .sidebar__mobile__user
+	{
+		border-color: var(--hover-background);
+	}
+	.sidebar__mobile__settings h3, .sidebar__mobile__links h3
+	{
+		color: var(--main-text);
 	}
 }
 
